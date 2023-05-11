@@ -1,6 +1,8 @@
 # Covid-Portfolio-SQL-queries
 SQL queries of statistics on the COVID epidemic and its vaccination.
 
+The dates are from January 2020 to April 2023. Most of the portfolios you can find have data up to mid-2022.
+
 The data were downloaded from the following site:
 https://ourworldindata.org/covid-deaths
 
