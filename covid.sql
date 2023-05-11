@@ -57,23 +57,3 @@ JOIN covid.vaccinations v
     and d.date = v.date
 WHERE d.continent is not null
 order by 1,2,3;
-
--- Temporal Table
-create table TempTable
-(
-Continent varchat(225),
-Location varchat(255),
-Date datetime,
-Population numeric,
-New_Vaccionations numeric,
-Vaccination_Percentage numeric
-)
-insert into #TempTable
-SELECT d.continent, d.location, d.population, d.date, v.new_vaccinations, SUM(cast(v.new_vaccinations as REAL)) OVER (PARTITION by d.location ORDER by d.location, d.date)
-as People_Vaccinated, (People_Vaccinated/population)*100 as Vaccination_Percentage
-FROM covid.deaths d
-JOIN covid.vaccinations v
-	ON d.location = v.location
-    and d.date = v.date
-WHERE d.continent is not null
-order by 1,2,3;
