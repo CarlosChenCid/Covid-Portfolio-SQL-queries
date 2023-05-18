@@ -3,6 +3,9 @@ SQL queries of statistics on the COVID epidemic and its vaccination.
 
 The dates are from January 2020 to April 2023. Most of the portfolios you can find have data up to mid-2022.
 
+Remark: This is the most important feature of this information that records all information from 2020 to 2023,
+most other visualizations only present information up to 2022.
+
 The data were downloaded from the following site:
 https://ourworldindata.org/covid-deaths
 
@@ -13,6 +16,11 @@ Columns with information not essential for the analysis were removed and the pop
 
 Once the table was separated and prepared, it was imported into MySQL. The queries can be reviewed below.
 
+SQL query allowed me to create this dashboard in Tableau:
+https://public.tableau.com/app/profile/carlos.chen/viz/Coronavirus2020-2023/Dashboard1
+
+Dashboard with the most recent information compiled with a map of the countries most infected by the pandemic,
+as well as global deaths classified by country and continent.
 
 
 ### About Me  
